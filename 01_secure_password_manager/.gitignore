@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Password manager data
+vault.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Local vault directory
+.secure_password_manager/
+
+# Reports / temporary files
+*.log
+*.tmp
+*.bak
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
