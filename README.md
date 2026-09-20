@@ -12,17 +12,17 @@ Instead of focusing only on small utilities, this phase focuses on building larg
 
 The goal of this repository is to move from basic Python scripting toward more advanced:
 
-- 🐍 Python development
-- 🔐 Cryptography
-- 🛡️ Cybersecurity
-- 🌐 Networking
-- 🔑 Authentication
-- 💾 Database development
-- 🔒 Secure data storage
-- 🧪 Security testing
-- 🏗️ Software architecture
-- 🤖 Security automation
-- 📊 Monitoring and detection
+* 🐍 Python development
+* 🔐 Cryptography
+* 🛡️ Cybersecurity
+* 🌐 Networking
+* 🔑 Authentication
+* 💾 Database development
+* 🔒 Secure data storage
+* 🧪 Security testing
+* 🏗️ Software architecture
+* 🤖 Security automation
+* 📊 Monitoring and detection
 
 Each project is designed to solve a practical problem while introducing new software development and security concepts.
 
@@ -30,18 +30,18 @@ Each project is designed to solve a practical problem while introducing new soft
 
 # 📂 Projects
 
-| # | Project | Description | Technologies | Status |
-|---|---|---|---|---|
-| 01 | 🔐 Secure Password Manager | Local encrypted password vault using Argon2id and AES-256-GCM | Python, SQLite, Cryptography | 🚧 Development |
-| 02 | 🧪 Vulnerability Scanner | Coming soon | Python, Networking, Security | 🔜 Coming Soon |
-| 03 | 📡 Network Monitor | Coming soon | Python, Networking | 🔜 Coming Soon |
-| 04 | 🔐 Secure File Transfer | Coming soon | Python, Sockets, Cryptography | 🔜 Coming Soon |
-| 05 | 🌐 Security REST API | Coming soon | Python, FastAPI/Flask, REST | 🔜 Coming Soon |
-| 06 | 📊 Security Dashboard | Coming soon | Python, Database, Visualization | 🔜 Coming Soon |
-| 07 | 🔑 Authentication API | Coming soon | Python, JWT, Authentication | 🔜 Coming Soon |
-| 08 | 🧰 Security Automation Toolkit | Coming soon | Python, Cybersecurity | 🔜 Coming Soon |
-| 09 | 📝 SIEM-Style Log Monitor | Coming soon | Python, Logging, Detection | 🔜 Coming Soon |
-| 10 | 🚀 Full-Stack Security Project | Coming soon | Python, Web, Security | 🔜 Coming Soon |
+| #  | Project                        | Description                                                                       | Technologies                    | Status         |
+| -- | ------------------------------ | --------------------------------------------------------------------------------- | ------------------------------- | -------------- |
+| 01 | 🔐 Secure Password Manager     | Local encrypted password vault using Argon2id and AES-256-GCM                     | Python, SQLite, Cryptography    | 🚧 Development |
+| 02 | 🧪 Vulnerability Scanner       | Defensive network and service exposure scanner with security checks and reporting | Python, Networking, Security    | ✅ Completed    |
+| 03 | 📡 Network Monitor             | Coming soon                                                                       | Python, Networking              | 🔜 Coming Soon |
+| 04 | 🔐 Secure File Transfer        | Coming soon                                                                       | Python, Sockets, Cryptography   | 🔜 Coming Soon |
+| 05 | 🌐 Security REST API           | Coming soon                                                                       | Python, FastAPI/Flask, REST     | 🔜 Coming Soon |
+| 06 | 📊 Security Dashboard          | Coming soon                                                                       | Python, Database, Visualization | 🔜 Coming Soon |
+| 07 | 🔑 Authentication API          | Coming soon                                                                       | Python, JWT, Authentication     | 🔜 Coming Soon |
+| 08 | 🧰 Security Automation Toolkit | Coming soon                                                                       | Python, Cybersecurity           | 🔜 Coming Soon |
+| 09 | 📝 SIEM-Style Log Monitor      | Coming soon                                                                       | Python, Logging, Detection      | 🔜 Coming Soon |
+| 10 | 🚀 Full-Stack Security Project | Coming soon                                                                       | Python, Web, Security           | 🔜 Coming Soon |
 
 > Projects will be added progressively as I learn and build them.
 
@@ -59,29 +59,29 @@ It securely stores credentials inside an encrypted SQLite vault.
                      Master Password
                             │
                             ▼
-                    ┌──────────────┐
-                    │   Argon2id   │
-                    │              │
-                    │ 19 MiB       │
-                    │ 2 iterations │
-                    │ 1 lane       │
-                    └──────┬───────┘
-                           │
-                           ▼
-                      256-bit Key
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │  AES-256-GCM │
-                    │     AEAD     │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    Encrypted Vault
-                           │
-                           ▼
-                         SQLite
-````
+                     ┌──────────────┐
+                     │   Argon2id   │
+                     │              │
+                     │ 19 MiB       │
+                     │ 2 iterations │
+                     │ 1 lane       │
+                     └──────┬───────┘
+                            │
+                            ▼
+                       256-bit Key
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │ AES-256-GCM  │
+                     │     AEAD     │
+                     └──────┬───────┘
+                            │
+                            ▼
+                     Encrypted Vault
+                            │
+                            ▼
+                          SQLite
+```
 
 ### Main features
 
@@ -99,6 +99,82 @@ It securely stores credentials inside an encrypted SQLite vault.
 * ✅ Vault integrity verification
 * 🔒 POSIX file permission protection
 * 🚫 No plaintext master password storage
+
+**Status:** 🚧 Development
+
+---
+
+# 🧪 Project 02 — Vulnerability Scanner
+
+The second project in this phase is a defensive Python-based vulnerability and service exposure scanner.
+
+The project builds upon networking and security concepts while moving beyond simple port scanning.
+
+It is designed to help identify:
+
+* Exposed TCP services
+* Potentially risky services
+* Basic service/banner information
+* HTTP security-header issues
+* TLS certificate information
+* Security configuration concerns
+* Basic risk levels
+
+### Main features
+
+* 🎯 Target validation
+* 🌐 Hostname/IP resolution
+* 🔎 TCP port scanning
+* ⚡ Concurrent port scanning
+* 🏷️ Service identification
+* 📡 Basic banner detection
+* 🌐 HTTP security-header analysis
+* 🔐 TLS certificate inspection
+* ⚠️ Risky service detection
+* 📊 Risk classification
+* 📄 JSON report generation
+* 🖥️ Command-line interface
+
+### Security checks
+
+The scanner can identify potentially risky exposure involving services such as:
+
+```text
+FTP
+Telnet
+SMB
+RDP
+MySQL
+PostgreSQL
+Redis
+MongoDB
+Elasticsearch
+Docker API
+```
+
+### Technologies
+
+```text
+Python
+Socket
+Networking
+SSL/TLS
+Concurrent Futures
+Regular Expressions
+JSON
+Argparse
+Cybersecurity
+```
+
+### Important distinction
+
+An exposed port or detected service does **not automatically mean that a vulnerability exists**.
+
+The scanner provides defensive findings that should be manually validated.
+
+It does not perform exploitation, credential attacks, brute force, or destructive testing.
+
+**Status:** ✅ Completed
 
 ---
 
@@ -146,7 +222,9 @@ Technologies used throughout the repository will include:
 Python
 SQLite
 Sockets
+TCP/IP
 HTTP/HTTPS
+TLS
 Cryptography
 Argon2id
 AES-GCM
@@ -215,6 +293,9 @@ Full-Stack Security Project
 * File handling
 * Database integration
 * Testing
+* Concurrency
+* Networking
+* JSON processing
 
 ## 🔐 Cybersecurity
 
@@ -228,6 +309,7 @@ Full-Stack Security Project
 * Vulnerability assessment
 * Security monitoring
 * Threat detection
+* Security automation
 
 ## 🌐 Networking
 
@@ -238,6 +320,7 @@ Full-Stack Security Project
 * Network services
 * Client/server architecture
 * Network monitoring
+* Service discovery
 
 ## 🏗️ Software Development
 
@@ -249,6 +332,7 @@ Full-Stack Security Project
 * Secure coding
 * Testing
 * Documentation
+* Report generation
 
 ---
 
@@ -294,7 +378,11 @@ python-security-software-projects/
 │   └── README.md
 │
 ├── 02_vulnerability_scanner/
-│   └── ...
+│   ├── vulnerability_scanner.py
+│   ├── requirements.txt
+│   ├── .gitignore
+│   ├── README.md
+│   └── reports/
 │
 ├── 03_network_monitor/
 │   └── ...
@@ -353,7 +441,7 @@ Then enter the project you want to run.
 For example:
 
 ```bash
-cd 01_secure_password_manager
+cd 02_vulnerability_scanner
 ```
 
 Follow that project's README for installation and usage instructions.
@@ -372,6 +460,7 @@ Important rules:
 * Never commit private keys.
 * Never commit real production credentials.
 * Never upload real password-manager vaults.
+* Never upload real security scan reports containing sensitive infrastructure information.
 * Use test accounts whenever possible.
 * Keep `.env` and credential files out of Git.
 * Review files before uploading them to GitHub.
@@ -401,10 +490,10 @@ Understanding cybersecurity also means understanding responsible and ethical use
 
 # 📊 Project Progress
 
-| Phase   | Focus                        | Projects |
-| ------- | ---------------------------- | -------: |
-| Phase 1 | Python Mini Projects         |     13 ✅ |
-| Phase 2 | Security & Software Projects |     1 🚧 |
+| Phase   | Focus                        |   Projects |
+| ------- | ---------------------------- | ---------: |
+| Phase 1 | Python Mini Projects         |       13 ✅ |
+| Phase 2 | Security & Software Projects | 1 🚧 / 1 ✅ |
 
 ### Phase 1
 
@@ -426,13 +515,14 @@ Completed with 13 practical projects covering:
 
 **Python Security & Software Projects**
 
-Current focus:
+Current projects cover:
 
 * Cybersecurity
 * Secure software development
 * Cryptography
 * Authentication
 * Networking
+* Vulnerability assessment
 * Security automation
 * Larger applications
 
@@ -443,18 +533,35 @@ Current focus:
 ```text
 Phase 2
    │
-   └── Project 01
+   ├── Project 01
+   │      │
+   │      └── 🔐 Secure Password Manager
+   │              │
+   │              ├── Argon2id
+   │              ├── AES-256-GCM
+   │              ├── SQLite
+   │              ├── Secure Password Generation
+   │              └── Encrypted Vault
+   │
+   └── Project 02
           │
-          └── 🔐 Secure Password Manager
-                    │
-                    ├── Argon2id
-                    ├── AES-256-GCM
-                    ├── SQLite
-                    ├── Secure Password Generation
-                    └── Encrypted Vault
+          └── 🧪 Vulnerability Scanner
+                  │
+                  ├── TCP Port Scanning
+                  ├── Service Detection
+                  ├── Banner Analysis
+                  ├── HTTP Security Checks
+                  ├── TLS Inspection
+                  ├── Risk Analysis
+                  └── JSON Reporting
 ```
 
-**Current status: 🚧 Development**
+**Current status:**
+
+```text
+Project 01 → 🚧 Development
+Project 02 → ✅ Completed
+```
 
 ---
 
@@ -481,12 +588,14 @@ The focus is on understanding both **how software works and how software can fai
 
 # 👨‍💻 Author
 
-**Avinash Das Manikpuri**
+**AvinashSecDev**
+
+Cybersecurity • Python • Software Development • Web Development • Networking
 
 GitHub:
 
 ```text
-https://github.com/Avinash-05-web
+https://github.com/AvinashSecDev
 ```
 
 ---
